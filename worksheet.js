@@ -40,7 +40,7 @@
 //2. Reverse a string
 
 //First I have to declare a variable for a string which, in this case, will be "Metamorphosis"
-let string = "Metamorphosis"
+//let string = "Metamorphosis"
 
 //Now I need to isolate individual characters in a string.  This can be done using indexes.
 //console.log(string[0])
@@ -54,22 +54,32 @@ let string = "Metamorphosis"
 //while this works, this logs the individual characters in reverse order.  I will now format the solution 
 //to log the whole word in reverse.  In order to do this I need to add together all the characters and 
 //create a variable to capture them. 
-let reverseString = ""
-for(i = string.length - 1; i >= 0; [i--]){
-    reverseString += string[i];
-}
-console.log(reverseString)
-
-
-
-//a. Write code that takes a string as input and returns the string reversed
-//b. i.e. “Hello” will be returned as “olleH”
+//let reverseString = ""
+//for(i = string.length - 1; i >= 0; [i--]){
+//    reverseString += string[i];
+//}
+//console.log(reverseString)
 
 //3. Capitalize letter
 //a. Write code that takes a string as input and capitalize the first letter of 
 //each word. Words will be separated by only one space. i.e. “hello 
 //world” should be outputted as “Hello World”
 
+//To start, I will create a string of multiple words.
+string = "try to capitalize the first letter of each word within this string"
+
+//Next I will isolate and capitalize a single letter from a single word.  I will research how to capitalize a letter.
+//console.log(string[0].toUpperCase())
+
+//This allows me to capitalize the first letter of the first word, but in this form the solution will not cleanly 
+//capitalize the first letter of each word.  To do this, I will try to instead capitalize every letter that follows a " ".
+let finishedProduct = ""
+for(i = 0; i <= string.length - 1; [i++]){
+    if (string[0] === string[i] || string[i] === " "){
+    console.log(string[i].toUpperCase())}
+}
+
+console.log(finishedProduct)
 //4. Compress a string of characters
 //a. For example, an input of "aaabbbbbccccaacccbbbaaabbbaaa" would 
 //compress to "3a5b4c2a3c3b3a3b3a"
