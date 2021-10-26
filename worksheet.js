@@ -25,19 +25,43 @@
 //d. If a number is divisible by 3 and 5, print ‘fizzbuzz’ instead of the 
 //number
 
-for(i = 0; i <= 100; [i++]){
-    if(i % 5 == 0 && i % 3 == 0){
-        console.log("fizzbuzz")
-    } else if(i % 5 === 0){
-            console.log("buzz")
-    } else if(i % 3 === 0){
-        console.log("fizz")
-    } else {
-        console.log(i)
-    }
-}
+//for(i = 0; i <= 100; [i++]){
+//    if(i % 5 == 0 && i % 3 == 0){
+//        console.log("fizzbuzz")
+//    } else if(i % 5 === 0){
+//            console.log("buzz")
+//    } else if(i % 3 === 0){
+//        console.log("fizz")
+//    } else {
+//        console.log(i)
+//    }
+//}
 
 //2. Reverse a string
+
+//First I have to declare a variable for a string which, in this case, will be "Metamorphosis"
+let string = "Metamorphosis"
+
+//Now I need to isolate individual characters in a string.  This can be done using indexes.
+//console.log(string[0])
+
+//Now that I can isolate characters in a string, I want to rearrange them in reverse order.  
+//This will need to be done in a "for" loop since I need the rearrangement to involve incremental movements.
+//for(i = string.length; i >= 0; [i--]){
+//    console.log(string[i])
+//}
+
+//while this works, this logs the individual characters in reverse order.  I will now format the solution 
+//to log the whole word in reverse.  In order to do this I need to add together all the characters and 
+//create a variable to capture them. 
+let reverseString = ""
+for(i = string.length - 1; i >= 0; [i--]){
+    reverseString += string[i];
+}
+console.log(reverseString)
+
+
+
 //a. Write code that takes a string as input and returns the string reversed
 //b. i.e. “Hello” will be returned as “olleH”
 
